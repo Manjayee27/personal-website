@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("background.avif");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    height: 50px;
+    background-color: #e0eb68;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #e1ff00;
+    color: rgb(38, 12, 234);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+nav div p {
+    font-family: sans-serif;
+    font-size: larger;
+    margin-left: 20px;
+}
+
+nav a {
+    font-family: sans-serif;
+    font-size: larger;
+    margin-left: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 40px;
+}
+
+.welcom {
+    height: 100vh;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcom p {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+}
+
+.welcom p span {
+    color: #f4f282;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 70px;
+}
+
+.text {
+    height: 50vh;
+    width: 40vw;
+    border: 3px solid #e0eb68;
+    margin: 30px;
+    padding: 0 15px;
+    color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    font-size: larger;
+}
+
+.image {
+    height: 50vh;
+    width: 35vw;
+    margin: 30px;
+    border: 3px solid #e0eb68;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image img {
+    height: 50vh;
+    width: 35vw;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+iframe {
+    border: 3px solid #e0eb68;
+    border-radius: 10px;
+}
+
+.para{    
+    color: whitesmoke;
+    font-size: large;
+    padding: 30px 110px;
+    text-align: center;
+}
+
+#contact{
+    color: whitesmoke;
+    padding: 10px 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#name,#mail,#genres{
+    margin: 15px;
+    height: 25px;
+    width: 20rem;
+    background-color: #e0eb68;
+    border: 3px solid #e0eb68;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+#msg{
+    height: 20px;
+    margin-top: 15px;
+    width: 20px;
+    margin-right: 50px;
+}
+
+input[type=button]{
+    margin: 25px 140px;
+    height: 30px;
+    width: 150px;
+    background-color: #e0eb68;
+    border: 3px solid #e0eb68;
+    border-radius: 5px;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+label{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+footer {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: 45px;
+    background-color: #e0eb68;
+    border-top: 3px solid #e0eb68;
+    align-items: center;
+}
