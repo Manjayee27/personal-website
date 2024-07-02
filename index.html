@@ -66,23 +66,39 @@
             </p>
     </div>
     <div id="contact">
-        <form action="">
+        <form action="javascript:submitForm()" onsubmit="return validate()"> 
             <label for="name">NAME</label>
-            <input type="text" name="name" id="name"><br>
+            <input type="text" name="name" id="name" required><br>
             <label for="mail">EMAIL</label>
-            <input type="email" name="mail" id="mail"><br>
+            <input type="email" name="mail" id="mail" required><br>
             <label for="genre">GENRE</label>
-            <input list="genre" name="genres" id="genres">
+            <input list="genre" name="genres" id="genres" required>
             <datalist id="genre">
-                <option value="Poetry">
-                <option value="Fiction">
-                <option value="Nonfiction">
-                <option value="Drama">
+                <option value="mental health">
+                <option value="exercise">
+                <option value="effect">
+                <option value="happiness">
             </datalist><br>
             <input type="checkbox" name="msg" id="msg">
             <label for="msg">SUBSCRIBE TO OUR NEWSLETTER VIA EMAIL</label><br>
-            <input type="button" value="SUBMIT">
+            <input type="submit" value="SUBMIT">
         </form>
+        <script>
+            function validate() {
+                let name = document.getElementById("name")
+                let email = document.getElementById("email")
+                if(name.value.length < 10) {
+                  window.alert("Name must be greater than 10 character");
+                  return false;
+                } 
+                else {
+                  return true;
+                }
+            }
+            function submitForm() {
+                window.alert("Form Submitted")
+              }
+            </script>
     </div>
 
     <footer>
